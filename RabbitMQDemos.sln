@@ -5,8 +5,23 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", "{A4A91B44-4739-4781-BFA0-07C08C1D3A74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Demos.HelloWorld.Sender", "RabbitMQ.Demos.HelloWorld.Sender\RabbitMQ.Demos.HelloWorld.Sender.csproj", "{27BB0231-450A-43E3-A4F9-ED38D6846E3C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27BB0231-450A-43E3-A4F9-ED38D6846E3C} = {A4A91B44-4739-4781-BFA0-07C08C1D3A74}
 	EndGlobalSection
 EndGlobal
