@@ -14,7 +14,9 @@ namespace RabbitMQ.Demos.WorkQueues.TaskSender
 
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare("hello", false, false, false, null);
+                    // we need to mark both the queue and messages as durable
+                    bool durable = true;
+                    channel.QueueDeclare("hello", durable, false, false, null);
 
                     // Allow arbitrary messages to be sent from the command line
                     string message = GetMessage(args);
@@ -22,7 +24,7 @@ namespace RabbitMQ.Demos.WorkQueues.TaskSender
 
                     // Persistent 
                     var properties = channel.CreateBasicProperties();
-                    properties.DeliveryMode = 2;
+                    properties.SetPersistent(true);
 
                     channel.BasicPublish("", "hello", properties, body);
 
