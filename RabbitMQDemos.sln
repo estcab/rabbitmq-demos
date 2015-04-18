@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Demos.HelloWorld.Sender", "RabbitMQ.Demos.HelloWorld.Sender\RabbitMQ.Demos.HelloWorld.Sender.csproj", "{27BB0231-450A-43E3-A4F9-ED38D6846E3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Demos.HelloWorld.Receiver", "RabbitMQ.Demos.HelloWorld.Receiver\RabbitMQ.Demos.HelloWorld.Receiver.csproj", "{7C8A490F-B71B-4448-B485-6074FE014824}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27BB0231-450A-43E3-A4F9-ED38D6846E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8A490F-B71B-4448-B485-6074FE014824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8A490F-B71B-4448-B485-6074FE014824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8A490F-B71B-4448-B485-6074FE014824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8A490F-B71B-4448-B485-6074FE014824}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{27BB0231-450A-43E3-A4F9-ED38D6846E3C} = {A4A91B44-4739-4781-BFA0-07C08C1D3A74}
+		{7C8A490F-B71B-4448-B485-6074FE014824} = {A4A91B44-4739-4781-BFA0-07C08C1D3A74}
 	EndGlobalSection
 EndGlobal
