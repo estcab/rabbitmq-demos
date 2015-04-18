@@ -21,8 +21,20 @@ namespace RabbitMQ.Demos.PubSub.Emit
                     // types: direct, topic, headers and fanout.
 
                     channel.ExchangeDeclare("logs", "fanout");
+
+                    var message = GetMessage(args);
+                    var body = Encoding.UTF8.GetBytes(message);
+
+                    channel.BasicPublish("logs", "", null, body);
+
+                    Console.WriteLine(" [x] Sent {0}", message);
                 }
             }
+        }
+
+        private static string GetMessage(string[] args)
+        {
+            return ((args.Length > 0) ? string.Join(" ", args) : "info: Hello World!");
         }
     }
 }
