@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RabbitMQ.Client;
+using System;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using RabbitMQ.Client;
 
 namespace RabbitMQ.Demos.Routing.Sender
 {
